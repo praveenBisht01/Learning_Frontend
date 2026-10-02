@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f6f7fb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Navbar ke niche wala section */
+.job-container{
+    width:95%;
+    max-width:1600px;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:22px;
+    justify-items:center;
+    align-items:start;
+}
+
+/* Responsive */
+
+@media(max-width:1400px){
+    .job-container{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+
+@media(max-width:1100px){
+    .job-container{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .job-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:500px){
+    .job-container{
+        grid-template-columns:1fr;
+    }
+}
